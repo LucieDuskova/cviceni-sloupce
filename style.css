@@ -29,6 +29,25 @@ body {
   background-color: #2ecc71;
 }
 
+.kontejner,
+.sloupec {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .kontejner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .sloupec {
+    display: flex;
+    flex-direction: row;
+    width: calc(100%/3);
+  }
+}
+
 /*
 Nastavte CSS pro třídu .kontejner a .sloupec:
 - ve výchozím stavu (=mobil) budou obdélníky pod sebou
